@@ -1,0 +1,13 @@
+{
+  "name": "@lindapaiste/react-native-image-sizing",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@lindapaiste/geometry": "^1.0.3",
+    "react": "^16.13.1",
+    "react-native": "^0.63.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.46",
+    "@types/react-native": "^0.63.6"
+  }
+}

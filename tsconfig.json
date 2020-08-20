@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "lib": [
+      "esnext", "es2017"
+    ],
+    "esModuleInterop": true,
+    "jsx": "react-native"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
