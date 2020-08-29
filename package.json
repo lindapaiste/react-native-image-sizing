@@ -1,6 +1,8 @@
 {
   "name": "@lindapaiste/react-native-image-sizing",
   "version": "1.0.0",
+  "author": "Linda Paiste",
+  "description": "a collection of JSX function components to handle image sizing through props rather than CSS styling",
   "peerDependencies": {
     "@lindapaiste/geometry": "^1.0.3",
     "react": "^16.13.1",
@@ -8,11 +10,22 @@
   },
   "devDependencies": {
     "@types/react": "^16.9.46",
-    "@types/react-native": "^0.63.6"
+    "@types/react-native": "^0.63.6",
+    "@types/jest": "^26.0.9",
+    "jest": "^26.3.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.2.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.7"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/lindapaiste/react-native-image-sizing.git"
+  },
+  "homepage": "https://github.com/lindapaiste/react-native-image-sizing",
+  "bugs": {
+    "url": "https://github.com/lindapaiste/react-native-image-sizing/issues"
   },
   "scripts": {
     "build": "tsc",
@@ -23,5 +36,14 @@
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
-  }
+  },
+  "license": "ISC",
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "images",
+    "sizing",
+    "layout"
+  ]
 }
