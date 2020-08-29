@@ -1,6 +1,6 @@
 {
   "name": "@lindapaiste/react-native-image-sizing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Linda Paiste",
   "description": "a collection of JSX function components to handle image sizing through props rather than CSS styling",
   "peerDependencies": {
