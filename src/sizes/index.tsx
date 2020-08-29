@@ -1,15 +1,13 @@
 import React from 'react';
-import Image from '../Image';
-import {PropScale, PropSize} from "./types";
 import {getScaleForHeight, getScaleForWidth, getScaleToFit, ISized, PropHeight, PropWidth} from "@lindapaiste/geometry";
-import {ImageProps} from "../Image/types";
+import {PropScale, PropSize, ImageProps, Image} from "..";
 
 /**
  * create a useful library of standard image display components
  * to minimize the amount of props and inline styling needed to achieve an effect
  */
 
-//------------------------------WITH GIVEN SIZE-------------------------------//
+// ------------------------------WITH GIVEN SIZE------------------------------- //
 
 /**
  * Create an image with the provided width and height. The resulting element will always be of the desired size, but
@@ -58,7 +56,7 @@ export const ShrinkToFit = (props: ImageProps & Partial<ISized>) => (
     />
 );
 
-//-----------------------------SPECIAL SHAPES--------------------------------//
+// -----------------------------SPECIAL SHAPES-------------------------------- //
 
 /**
  * pass a single prop "size" for a square image rather than a width and height
@@ -75,7 +73,7 @@ export const CircularImage = ({size, style, ...props}: ImageProps & PropSize) =>
     return SquareImage({...props, size, style: {...style, borderRadius: size / 2}});
 };
 
-//------------------------SCALED BASED ON PARAMS------------------------------//
+// ------------------------SCALED BASED ON PARAMS------------------------------ //
 
 /**
  * basic ScaledImage takes a prop "scale" and applies that scale to the original size of the image
@@ -109,5 +107,5 @@ export const FixedWidthImage = (props: ImageProps & PropWidth) =>
         scale={getScaleForWidth(props.image, props.width)}
     />;
 
-//------------------------------SCALED TO WINDOW------------------------------//
+// ------------------------------SCALED TO WINDOW------------------------------ //
 

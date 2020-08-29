@@ -10,6 +10,8 @@
     "jsx": "react-native"
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "gallery",
+    "multisize"
   ]
 }

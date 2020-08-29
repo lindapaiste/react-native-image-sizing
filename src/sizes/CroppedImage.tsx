@@ -2,7 +2,7 @@ import React from "react";
 import {PropRectangle, PropScale} from "./types";
 import {ScaledImage} from "./index";
 import {View} from "react-native";
-import {ImageProps} from "../Image/types";
+import {ImageProps} from "..";
 
 /**
  * visually crop an image to just the area selected by a rectangle
@@ -36,6 +36,8 @@ export const CroppedImage = ({image, rectangle, scale = 1, ...props}: Props) => 
         </View>
     );
 };
+
+export default CroppedImage;
 
 /*
 export const MaxSizeCroppedImage = ({image, rectangle}) => {

@@ -1,6 +1,5 @@
 import {IRectangle} from "@lindapaiste/geometry";
 
-
 /**
  * cropped or contained images require a rectangle
  */
